@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class LabProgram {
+   public static void main(String[] args) {
+      
+      Scanner scnr = new Scanner (System.in);
+      
+      int numOne;
+      int numTwo;
+      
+      numOne = scnr.nextInt();
+      numTwo = scnr.nextInt();
+      
+      if (numTwo < numOne) {
+         System.out.println("Second integer can't be less than the first.");
+      }
+      else {
+      while (numOne <= numTwo) {
+         
+         System.out.print(numOne + " ");
+         
+         numOne = numOne + 5;
+      
+      }
+      System.out.print("\n");
+      }
+   }
+}
